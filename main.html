@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartão de Identificação</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #0073e6;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            max-width: 400px;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        .header-left {
+            display: flex;
+            align-items: center;
+            width: 100px;
+        }
+        .header-right {
+            display: flex;
+            align-items: center;
+        }
+        .header-right nav {
+            margin-left: 10px;
+        }
+        header img:first-child { 
+            width: 70px;
+            height: auto;
+        }
+        header img:nth-child(2) { 
+            width: 40px;
+            height: auto;
+        }
+        header nav a { 
+            color: white; 
+            font-size: 40px; 
+        }
+        .photo-container {
+            display: flex;
+            justify-content: space-between;
+            margin: 10px;
+            gap: 10px;
+            width: 100%;
+            max-width: 400px;
+        }
+        .photo {
+            width: 48%;
+            height: 200px;
+            background-color: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            border: 1px solid #ddd;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        .photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+        .info-container {
+            margin-top: 20px;
+            width: 100%;
+            max-width: 400px;
+            background-color: #fff;
+            border-radius: 10px;
+            border: 1px solid #ddd;
+        }
+        .info-container p {
+            margin: 12px 0;
+            padding-left: 20px;
+        }
+        .info-container p b {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <img src="https://github.com/Godofin/dne_clone/blob/main/img/dne-logo.PNG?raw=true" alt="Foto 1">
+        </div>
+        <div class="header-right">
+            <img src="https://github.com/Godofin/dne_clone/blob/main/img/une-logo-2.png?raw=true" alt="Foto 2">
+            <nav>
+                <a>☰</a>
+            </nav>
+        </div>
+    </header>
+    <div class="photo-container">
+        <div class="photo">
+            <img src="https://github.com/Godofin/dne_clone/blob/main/img/file.jpg?raw=true" alt="Foto 1">
+        </div>
+        <div class="photo">
+            <img src="https://github.com/Godofin/dne_clone/blob/main/img/qr_teste.png?raw=true" alt="Foto 2">
+        </div>
+    </div>
+    <div class="info-container">
+        <p><b>José Clóvis Lavezzo Filho</b></p>
+        <p><b>Inst Ensino:</b> USP Esalq</p>
+        <p><b>Curso:</b> MBA - Gestão de Pessoas</p>
+        <p><b>Nível de Ensino:</b> Pós-Graduação</p>
+        <p><b>RG:</b> 12.345.678-9</p>
+        <p><b>Data de Nascimento:</b> 01/01/2000</p>
+        <p><b>Validade:</b> 31/03/2025</p>
+    </div>
+</body>
+</html>
